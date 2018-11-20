@@ -1,0 +1,3 @@
+#! /bin/bash
+sudo scutil --set HostName Frozen
+sudo dscl . -create /Users/$USER UserShell $(which zsh)

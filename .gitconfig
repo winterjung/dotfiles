@@ -1,0 +1,22 @@
+[user]
+    email = wintermy201@gmail.com
+    name = jungwinter
+    signingkey = 86EE98BD
+[color]
+    ui = auto
+[core]
+    precomposeunicode = true
+    quotepath = false
+    excludesfile = ~/.gitignore
+    editor = vim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[commit]
+    gpgsign = true
+[gpg]
+    program = gpg
+[diff]
+    tool = icdiff
+[difftool]
+    prompt = false
+[difftool "icdiff"]
+    cmd = /usr/local/bin/icdiff —line-numbers $LOCAL $REMOTE

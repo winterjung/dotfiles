@@ -1,0 +1,8 @@
+# Mac OS
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+.python-version
