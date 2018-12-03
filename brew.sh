@@ -62,3 +62,7 @@ ln -nfs ~/dotfiles/.zshrc ~/.zshrc
 # Python
 brew install pyenv
 brew install pipenv
+
+# Docker
+# Install docker using .dmg
+brew install docker-compose
