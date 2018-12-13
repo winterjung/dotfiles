@@ -8,3 +8,6 @@ sudo dscl . -create /Users/$USER UserShell $(which zsh)
 # Set ₩ to `
 mkdir ~/Library/KeyBindings
 echo '{\n  "₩" = ("insertText:", "`");\n}' > ~/Library/KeyBindings/DefaultkeyBinding.dict
+
+# Add gpki.cer to Keychain
+sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain gpki.cer
