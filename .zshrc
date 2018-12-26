@@ -54,8 +54,12 @@ fi
 # Unset local functions and variables
 unset BREW_PREFIX
 
+# My functions
+pman() {
+  man -t $* | open -f -a /Applications/Preview.app
+}
+
 # Define aliases
 alias prp="pipenv run python"
 alias l="exa -alh --git --color=automatic"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-
