@@ -6,7 +6,11 @@ fi
 # Set oh-my-zsh
 export ZSH="/Users/winterj/.oh-my-zsh"
 ZSH_THEME="sorin"
-plugins=(git)
+plugins=(
+  git
+  docker
+  pyenv
+)
 source $ZSH/oh-my-zsh.sh
 source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -35,20 +39,6 @@ if [ -f ~/.fzf.zsh ]; then
         {}
 FZF-EOF"
   }
-fi
-
-# Load pyenv
-if command -v pyenv >/dev/null; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  eval "$(pyenv init - zsh)"
-  if command -v pyenv-virtualenv-init >/dev/null; then
-    eval "$(pyenv virtualenv-init - zsh)"
-  fi
-elif [ -e "$HOME/.pyenv" ]; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$HOME/.pyenv/bin:$PATH"
-  eval "$(pyenv init - zsh)"
-  eval "$(pyenv virtualenv-init - zsh)"
 fi
 
 # Unset local functions and variables
