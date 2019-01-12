@@ -28,6 +28,7 @@ brew install icdiff
 brew install jq
 brew install tldr
 brew install ncdu
+brew install hexyl
 
 # Just for fun
 brew install lolcat
