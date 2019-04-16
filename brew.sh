@@ -11,6 +11,7 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install telegram-desktop
 brew cask install haptickey
+brew cask install vagrant
 
 # Basic tools
 brew install wget
@@ -29,6 +30,8 @@ brew install jq
 brew install tldr
 brew install ncdu
 brew install hexyl
+brew install supervisor
+brew install ngrok
 
 # Just for fun
 brew install lolcat
@@ -37,6 +40,7 @@ brew install lolcat
 brew install git
 brew install gpg
 brew install diff-so-fancy
+brew install git-flow-avh
 brew install pinentry-mac
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 if [ -f ~/.gitignore ]; then
