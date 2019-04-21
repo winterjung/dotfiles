@@ -36,38 +36,6 @@ brew install ngrok
 # Just for fun
 brew install lolcat
 
-# Git
-brew install git
-brew install gpg
-brew install diff-so-fancy
-brew install git-flow-avh
-brew install pinentry-mac
-echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-if [ -f ~/.gitignore ]; then
-  rm ~/.gitignore
-fi
-ln -nfs ~/dotfiles/.gitignore ~/.gitignore
-
-if [ -f ~/.gitconfig ]; then
-  rm ~/.gitconfig
-fi
-ln -nfs ~/dotfiles/.gitconfig ~/.gitconfig
-
-# Zsh & Oh-my-zsh
-brew install zsh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-brew install zsh-syntax-highlighting
-brew install zsh-autosuggestions
-
-if [ -f ~/.zshrc ]; then
-  rm ~/.zshrc
-fi
-ln -nfs ~/dotfiles/.zshrc ~/.zshrc
-
 # Python
 brew install pyenv
 brew install pipenv
-
-# Docker
-# Install docker using .dmg
-brew install docker-compose

@@ -9,9 +9,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set hostname
 sudo scutil --set HostName Frozen
 
-# Set default shell to zsh
-sudo dscl . -create /Users/$USER UserShell $(which zsh)
-
 # Set ₩ to `
 mkdir ~/Library/KeyBindings
 echo '{\n  "₩" = ("insertText:", "`");\n}' > ~/Library/KeyBindings/DefaultkeyBinding.dict
