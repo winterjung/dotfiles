@@ -10,17 +10,11 @@ plugins=(
   git
   docker
   pyenv
+  z
 )
 source $ZSH/oh-my-zsh.sh
 source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# Load z
-if [ -n "$BREW_PREFIX" ]; then
-  if [ -f "$BREW_PREFIX/etc/profile.d/z.sh" ]; then
-    source "$BREW_PREFIX/etc/profile.d/z.sh"
-  fi
-fi
 
 # Load fzf
 if [ -f ~/.fzf.zsh ]; then
