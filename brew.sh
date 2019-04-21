@@ -12,6 +12,7 @@ brew cask install visual-studio-code
 brew cask install telegram-desktop
 brew cask install haptickey
 brew cask install vagrant
+brew cask install aerial
 
 # Basic tools
 brew install wget
