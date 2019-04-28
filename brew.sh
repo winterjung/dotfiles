@@ -11,7 +11,6 @@ brew cask install iterm2
 brew cask install visual-studio-code
 brew cask install telegram-desktop
 brew cask install haptickey
-brew cask install vagrant
 brew cask install aerial
 
 # Basic tools
@@ -40,3 +39,12 @@ brew install lolcat
 # Python
 brew install pyenv
 brew install pipenv
+brew install zlib
+CFLAGS="-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" LDFLAGS="-L$(brew --prefix openssl)/lib" pyenv install 3.7.3
+
+# DevOps
+brew cask install vagrant
+brew install ansible
+brew install packer
+brew install terraform
+
