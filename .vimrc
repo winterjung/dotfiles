@@ -56,3 +56,10 @@ set incsearch
 set ignorecase
 
 set smartcase
+
+""""""""""""""""""""""""""""
+" Command
+""""""""""""""""""""""""""""
+
+" Map hangul with alphabet
+set langmap=ㅁㅠㅊㅇㄷㄹㅎㅗㅑㅓㅏㅣㅡㅜㅐㅔㅂㄱㄴㅅㅕㅍㅈㅌㅛㅋ;abcdefghijklmnopqrstuvwxyz
