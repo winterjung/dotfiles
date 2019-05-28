@@ -13,6 +13,8 @@ brew cask install telegram-desktop
 brew cask install haptickey
 brew cask install aerial
 brew cask install font-fira-code
+brew cask install dozer
+brew cask install pock
 
 # Basic tools
 brew install wget
