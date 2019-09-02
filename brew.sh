@@ -43,7 +43,11 @@ brew install lolcat
 brew install pyenv
 brew install pipenv
 brew install zlib
-CFLAGS="-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" LDFLAGS="-L$(brew --prefix openssl)/lib" pyenv install 3.7.3
+CFLAGS="-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include" LDFLAGS="-L$(brew --prefix openssl)/lib" pyenv install 3.7.4
+
+# Go
+brew install go
+brew install gomplate
 
 # DevOps
 brew cask install vagrant

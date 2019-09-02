@@ -48,3 +48,7 @@ alias prp="pipenv run python"
 alias l="exa -alh --git --color=automatic"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias docker-rm-exit="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
+
+# Configure golang
+export GOPATH=~/go
+export PATH=$GOPATH/bin:$PATH
