@@ -54,4 +54,5 @@ brew cask install vagrant
 brew install ansible
 brew install packer
 brew install terraform
+brew install kubernetes-helm
 
