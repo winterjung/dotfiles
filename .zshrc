@@ -15,6 +15,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source <(kubectl completion zsh)
 
 # Load fzf
 if [ -f ~/.fzf.zsh ]; then
