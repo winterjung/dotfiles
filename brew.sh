@@ -49,6 +49,9 @@ CFLAGS="-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/includ
 brew install go
 brew install gomplate
 
+# Node
+brew install nvm
+
 # DevOps
 brew cask install vagrant
 brew install ansible
