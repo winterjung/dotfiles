@@ -49,6 +49,7 @@ alias prp="pipenv run python"
 alias l="exa -alh --git --color=automatic"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 alias docker-rm-exit="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
+alias grpo='git remote prune origin'
 
 # Configure golang
 export GOPATH=~/go
@@ -58,4 +59,3 @@ export PATH=$GOPATH/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-

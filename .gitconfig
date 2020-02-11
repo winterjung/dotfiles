@@ -20,3 +20,5 @@
     prompt = false
 [difftool "icdiff"]
     cmd = /usr/local/bin/icdiff —line-numbers $LOCAL $REMOTE
+[url "git@github.com:"]
+	insteadOf = https://github.com/
