@@ -34,6 +34,7 @@ if [ -f ~/.fzf.zsh ]; then
         {}
 FZF-EOF"
   }
+  export FZF_DEFAULT_COMMAND='fd --type file'
 fi
 
 # Unset local functions and variables
