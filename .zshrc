@@ -41,7 +41,7 @@ unset BREW_PREFIX
 
 # My functions
 pman() {
-  man -t $* | open -f -a /Applications/Preview.app
+  man -t "$@" | open -f -a /Applications/Preview.app
 }
 
 # Define aliases
@@ -57,5 +57,5 @@ export PATH=$GOPATH/bin:$PATH
 
 # Configure nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
