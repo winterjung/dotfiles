@@ -1,21 +1,27 @@
+# Set oh-my-zsh
+ZSH_THEME="sorin"
+plugins=(
+  asdf
+  docker
+  fd
+  fzf
+  git
+  z
+)
+
 # Set brew path
 if command -v brew >/dev/null; then
   BREW_PREFIX="$(brew --prefix)"
 fi
 
-# Set oh-my-zsh
-export ZSH="/Users/winterj/.oh-my-zsh"
-ZSH_THEME="sorin"
-plugins=(
-  git
-  docker
-  pyenv
-  z
-)
+ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 source $BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source <(kubectl completion zsh)
+
+# Unset local functions and variables
+unset BREW_PREFIX
 
 # Load fzf
 if [ -f ~/.fzf.zsh ]; then
@@ -37,26 +43,12 @@ FZF-EOF"
   export FZF_DEFAULT_COMMAND='fd --type file'
 fi
 
-# Unset local functions and variables
-unset BREW_PREFIX
-
 # My functions
 pman() {
   man -t "$@" | open -f -a /Applications/Preview.app
 }
 
 # Define aliases
-alias prp="pipenv run python"
 alias l="exa -alh --git --color=automatic"
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-alias docker-rm-exit="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
-alias grpo='git remote prune origin'
-
-# Configure golang
-export GOPATH=~/go
-export PATH=$GOPATH/bin:$PATH
-
-# Configure nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+alias cat="bat"
