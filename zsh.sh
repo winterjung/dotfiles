@@ -25,3 +25,7 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 
 source .zshrc
 
+asdf plugin add terraform
+asdf plugin add python
+asdf plugin add nodejs
+asdf plugin add golang
