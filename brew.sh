@@ -1,20 +1,11 @@
 #! /bin/bash
 brew update
-brew upgrade
 
 brew tap homebrew/services
-brew tap caskroom/cask
-brew tap caskroom/fonts
+brew tap homebrew/cask
+brew tap homebrew/cask-fonts
 
-brew cask install dropbox
-brew cask install iterm2
-brew cask install visual-studio-code
-brew cask install telegram-desktop
-brew cask install haptickey
-brew cask install aerial
-brew cask install font-fira-code
-brew cask install dozer
-brew cask install pock
+brew install --cask iterm2 visual-studio-code font-fira-code dozer aerial openinterminal-lite
 
 # Basic tools
 brew install wget
