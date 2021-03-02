@@ -7,6 +7,16 @@ if [ -f ~/.zshrc ]; then
 fi
 cp .zshrc ~
 
+if [ -f ~/z.sh ]; then
+  rm ~/z.sh
+fi
+cp z.sh ~
+
+if [ -f ~/.vimrc ]; then
+  rm ~/.vimrc
+fi
+cp .vimrc ~
+
 # Activate fzf
 source /usr/local/opt/fzf/install
 
