@@ -1,3 +1,6 @@
+# Oh-my-zsh
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
 # Zsh
 brew install zsh-syntax-highlighting
 brew install zsh-autosuggestions
@@ -20,10 +23,7 @@ cp .vimrc ~
 # Activate fzf
 source /usr/local/opt/fzf/install
 
-# Oh-my-zsh
-sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-
-source .zshrc
+source ~/.zshrc
 
 asdf plugin add terraform
 asdf plugin add python
