@@ -5,7 +5,7 @@ brew tap homebrew/services
 brew tap homebrew/cask
 brew tap homebrew/cask-fonts
 
-brew install --cask iterm2 visual-studio-code font-fira-code dozer aerial openinterminal-lite
+brew install --cask iterm2 visual-studio-code font-fira-code aerial alt-tab gimp stats
 
 # Basic tools
 brew install wget
